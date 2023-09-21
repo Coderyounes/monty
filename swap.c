@@ -11,18 +11,14 @@ void op_swap(stack_t **stack, unsigned int counter)
 	stack_t *temp;
 	int length = 0, num;
 
-	if (*stack != NULL)
+	length = getlen(*stack);
+
+	if (length >= 2)
 	{
-		length = getlen(*stack);
-
-		if (length >= 2)
-		{
-			temp = *stack;
-			num = temp->n;
-			temp->n = temp->next->n;
-			temp->next->n = num;
-		}
-
+		temp = *stack;
+		num = temp->n;
+		temp->n = temp->next->n;
+		temp->next->n = num;
 	}
 	else
 	{
