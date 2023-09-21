@@ -35,13 +35,13 @@ int main(int argc, char *argv[])
 
 	while (getline(&line, &buffer, file) != -1)
 	{
+		counter++;
 		op = tokenize(line, NULL);
 		arg = tokenize(NULL, NULL);
 		Taxi.arg = arg;
 
 		if (op)
 		{
-			counter++;
 			execute_instruction(op, &stack, counter);
 		}
 	}
