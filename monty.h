@@ -63,6 +63,7 @@ void op_swap(stack_t **stack, unsigned int counter);
 void op_add(stack_t **stack, unsigned int counter);
 void op_sub(stack_t **stack, unsigned int counter);
 void op_div(stack_t **stack, unsigned int counter);
+void op_mul(stack_t **stack, unsigned int counter);
 void op_nop(stack_t **stack, unsigned int counter);
 void free_stack(stack_t *h);
 
