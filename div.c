@@ -12,15 +12,15 @@ void op_div(stack_t **stack, unsigned int counter)
 	stack_t *node;
 
 	length = getlen(*stack);
-	if ((*stack)->n == 0)
-	{
-		fprintf(stderr, "L%d: division by zero\n", counter);
-		fclose(Taxi.filehold);
-		free_stack(*stack);
-		exit(EXIT_FAILURE);
-	}
 	if (length >= 2)
 	{
+		if ((*stack)->n == 0)
+		{
+			fprintf(stderr, "L%d: division by zero\n", counter);
+			fclose(Taxi.filehold);
+			free_stack(*stack);
+			exit(EXIT_FAILURE);
+		}
 		res = (*stack)->next->n / (*stack)->n;
 		op_pop(stack, counter);
 		op_pop(stack, counter);
@@ -43,7 +43,7 @@ void op_div(stack_t **stack, unsigned int counter)
 	}
 	else
 	{
-		fprintf(stderr, "L%d: can't add, stack too short\n", counter);
+		fprintf(stderr, "L%d: can't div, stack too short\n", counter);
 		fclose(Taxi.filehold);
 		free_stack(*stack);
 		exit(EXIT_FAILURE);
