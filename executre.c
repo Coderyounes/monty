@@ -16,6 +16,7 @@ int execute_instruction(char *op, stack_t **stack, unsigned int counter)
 		{"pall", op_pall},
 		{"pint", op_pint},
 		{"pop", op_pop},
+		{"swap", op_swap},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
