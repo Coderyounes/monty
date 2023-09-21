@@ -19,7 +19,7 @@ void op_pop(stack_t **stack, unsigned int counter)
 	}
 	else
 	{
-		fprintf(stderr, "L%d: can't pint, stack empty\n", counter);
+		fprintf(stderr, "L%d: can't pop an empty stack\n", counter);
 		fclose(Taxi.filehold);
 		free_stack(*stack);
 		exit(EXIT_FAILURE);
