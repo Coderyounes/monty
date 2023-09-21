@@ -41,7 +41,7 @@ void op_mul(stack_t **stack, unsigned int counter)
 	}
 	else
 	{
-		fprintf(stderr, "L%d: can't add, stack too short\n", counter);
+		fprintf(stderr, "L%d: can't mul, stack too short\n", counter);
 		fclose(Taxi.filehold);
 		free_stack(*stack);
 		exit(EXIT_FAILURE);
