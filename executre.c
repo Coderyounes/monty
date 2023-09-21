@@ -22,6 +22,7 @@ int execute_instruction(char *op, stack_t **stack, unsigned int counter)
 		{"sub", op_sub},
 		{"div", op_div},
 		{"mul", op_mul},
+		{"mod", op_mod},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
