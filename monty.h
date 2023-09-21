@@ -4,8 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stddef.h>
-#include <stdint.h>
+#include <stdbool.h>
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -53,9 +52,11 @@ typedef struct taxi_t
 extern taxi_t Taxi;
 
 char *tokenize(char *content, char **op);
+bool is_valid_integer(const char *str);
 int execute_instruction(char *op, stack_t **stack, unsigned int counter);
 void f_push(stack_t **stack, unsigned int counter);
 void f_pall(stack_t **stack, unsigned int counter);
+void free_stack(stack_t *h);
 
 #define BUFF 1024
 

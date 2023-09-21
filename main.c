@@ -41,8 +41,8 @@ int main(int argc, char *argv[])
 
 		if (op)
 		{
-			execute_instruction(op, &stack, counter);
 			counter++;
+			execute_instruction(op, &stack, counter);
 		}
 	}
 	free(line);
