@@ -1,4 +1,4 @@
-#include "funcs.h"
+#include "monty.h"
 
 /**
  * execute_instruction - function to identify operation & call other functions

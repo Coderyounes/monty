@@ -1,4 +1,4 @@
-#include "funcs.h"
+#include "monty.h"
 
 /**
  * f_push - function to push new element to the stack

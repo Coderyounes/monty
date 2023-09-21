@@ -1,5 +1,5 @@
-#ifndef FUNCS_H
-#define FUNCS_H
+#ifndef MONTY_H
+#define MONTY_H
 #define  _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
@@ -59,4 +59,4 @@ void f_pall(stack_t **stack, unsigned int counter);
 
 #define BUFF 1024
 
-#endif /* FUNCS_H  */
+#endif /* MONTY_H  */
