@@ -12,8 +12,9 @@
 int execute_instruction(char *op, stack_t **stack, unsigned int counter)
 {
 	instruction_t opst[] = {
-		{"push", f_push},
-		{"pall", f_pall},
+		{"push", op_push},
+		{"pall", op_pall},
+		{"pint", op_pint},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;

@@ -7,7 +7,7 @@
  * @counter: line number
  * Return: nothing it's a void
  */
-void f_pall(stack_t **stack, unsigned int counter)
+void op_pall(stack_t **stack, unsigned int counter)
 {
 	stack_t *current;
 	(void)counter;

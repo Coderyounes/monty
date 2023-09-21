@@ -54,8 +54,9 @@ extern taxi_t Taxi;
 char *tokenize(char *content, char **op);
 bool is_valid_integer(const char *str);
 int execute_instruction(char *op, stack_t **stack, unsigned int counter);
-void f_push(stack_t **stack, unsigned int counter);
-void f_pall(stack_t **stack, unsigned int counter);
+void op_push(stack_t **stack, unsigned int counter);
+void op_pall(stack_t **stack, unsigned int counter);
+void op_pint(stack_t **stack, unsigned int counter);
 void free_stack(stack_t *h);
 
 #define BUFF 1024

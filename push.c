@@ -7,7 +7,7 @@
  * Return: it's a void
  */
 
-void f_push(stack_t **stack, unsigned int counter)
+void op_push(stack_t **stack, unsigned int counter)
 {
 	char *arg = Taxi.arg;
 	int value;
